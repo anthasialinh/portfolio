@@ -1,0 +1,1045 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pham Mai Linh | Finance • Analytics • Leadership</title>
+    <meta name="description" content="Personal Portfolio of Pham Mai Linh - Banking & International Finance student at Foreign Trade University (FTU), President of Future Bankers Network.">
+    
+    <!-- Canonical & Domain Metadata -->
+    <link rel="canonical" href="https://anthasialinh.id.vn">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://anthasialinh.id.vn">
+    <meta property="og:title" content="Pham Mai Linh | Finance • Analytics • Leadership">
+    <meta property="og:description" content="Personal Portfolio of Pham Mai Linh - Banking & International Finance student at Foreign Trade University (FTU), President of Future Bankers Network.">
+    <meta property="og:site_name" content="Pham Mai Linh Portfolio">
+    <meta name="twitter:card" content="summary_large_image">
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=Playfair+Display:ital,wght@0,600;0,700;1,400;1,600&display=swap" rel="stylesheet">
+    
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            darkMode: 'class',
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['"Plus Jakarta Sans"', 'sans-serif'],
+                        serif: ['"Playfair Display"', 'serif'],
+                    },
+                    colors: {
+                        navy: {
+                            800: '#0f172a',
+                            900: '#090e1a',
+                            950: '#050811',
+                        },
+                        gold: {
+                            400: '#e5c07b',
+                            500: '#d4af37',
+                            600: '#b89628',
+                        },
+                        emerald: {
+                            500: '#10b981',
+                            600: '#059669',
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+    
+    <!-- Lucide Icons -->
+    <script src="https://unpkg.com/lucide@latest"></script>
+    
+    <!-- Custom Stylesheet -->
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body class="bg-slate-50 text-slate-800 dark:bg-navy-950 dark:text-slate-100 transition-colors duration-300 font-sans antialiased selection:bg-amber-400/30 selection:text-amber-900 dark:selection:text-amber-200">
+
+    <!-- Subtle Background Ambient Grid & Glow -->
+    <div class="fixed inset-0 pointer-events-none z-0 overflow-hidden">
+        <div class="absolute -top-40 -right-40 w-96 h-96 bg-amber-500/10 dark:bg-amber-500/5 rounded-full blur-3xl"></div>
+        <div class="absolute top-1/3 -left-40 w-96 h-96 bg-blue-600/10 dark:bg-blue-600/5 rounded-full blur-3xl"></div>
+        <div class="absolute bottom-10 right-1/4 w-80 h-80 bg-emerald-500/10 dark:bg-emerald-500/5 rounded-full blur-3xl"></div>
+        <div class="absolute inset-0 bg-[radial-gradient(#cbd5e1_1px,transparent_1px)] dark:bg-[radial-gradient(#1e293b_1px,transparent_1px)] [background-size:24px_24px] opacity-40"></div>
+    </div>
+
+    <!-- Navigation Header -->
+    <header class="fixed top-0 left-0 right-0 z-50 transition-all duration-300 backdrop-blur-md bg-white/80 dark:bg-navy-900/80 border-b border-slate-200/60 dark:border-slate-800/80" id="navbar">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-20 flex items-center justify-between">
+            <!-- Brand Monogram -->
+            <a href="#hero" class="flex items-center gap-3 group">
+                <div class="w-10 h-10 rounded-xl bg-gradient-to-br from-amber-500 to-amber-600 text-white flex items-center justify-center font-serif font-bold text-lg shadow-md shadow-amber-500/20 group-hover:scale-105 transition-transform">
+                    ML
+                </div>
+                <div class="flex flex-col">
+                    <span class="font-bold text-slate-900 dark:text-white tracking-tight group-hover:text-amber-600 dark:group-hover:text-gold-400 transition-colors">Pham Mai Linh</span>
+                    <span class="text-xs text-slate-500 dark:text-slate-400 font-medium">Finance • Analytics • Leadership</span>
+                </div>
+            </a>
+
+            <!-- Desktop Nav Links -->
+            <nav class="hidden md:flex items-center gap-8 text-sm font-medium">
+                <a href="#about" class="nav-link text-slate-600 dark:text-slate-300 hover:text-amber-600 dark:hover:text-gold-400 transition-colors">About</a>
+                <a href="#leadership" class="nav-link text-slate-600 dark:text-slate-300 hover:text-amber-600 dark:hover:text-gold-400 transition-colors">Leadership</a>
+                <a href="#skills" class="nav-link text-slate-600 dark:text-slate-300 hover:text-amber-600 dark:hover:text-gold-400 transition-colors">Skills</a>
+                <a href="#projects" class="nav-link text-slate-600 dark:text-slate-300 hover:text-amber-600 dark:hover:text-gold-400 transition-colors">Projects</a>
+                <a href="#education" class="nav-link text-slate-600 dark:text-slate-300 hover:text-amber-600 dark:hover:text-gold-400 transition-colors">Education</a>
+                <a href="#contact" class="nav-link text-slate-600 dark:text-slate-300 hover:text-amber-600 dark:hover:text-gold-400 transition-colors">Contact</a>
+            </nav>
+
+            <!-- Actions: Theme Toggle & Contact CTA -->
+            <div class="flex items-center gap-3">
+                <!-- Theme Toggle Button -->
+                <button id="themeToggle" class="p-2.5 rounded-lg border border-slate-200 dark:border-slate-800 text-slate-600 dark:text-slate-300 hover:bg-slate-100 dark:hover:bg-slate-800/80 transition-colors" aria-label="Toggle Theme">
+                    <i data-lucide="sun" class="w-4 h-4 hidden dark:block"></i>
+                    <i data-lucide="moon" class="w-4 h-4 block dark:hidden"></i>
+                </button>
+
+                <!-- Direct CTA Button -->
+                <a href="#contact" class="hidden sm:inline-flex items-center gap-2 px-4 py-2 text-sm font-semibold rounded-lg bg-slate-900 hover:bg-slate-800 text-white dark:bg-amber-500 dark:hover:bg-amber-400 dark:text-slate-950 shadow-sm transition-all hover:shadow-md">
+                    <span>Connect</span>
+                    <i data-lucide="arrow-right" class="w-4 h-4"></i>
+                </a>
+
+                <!-- Mobile Hamburger Button -->
+                <button id="mobileMenuBtn" class="md:hidden p-2.5 rounded-lg border border-slate-200 dark:border-slate-800 text-slate-700 dark:text-slate-300" aria-label="Open Menu">
+                    <i data-lucide="menu" class="w-5 h-5"></i>
+                </button>
+            </div>
+        </div>
+
+        <!-- Mobile Menu Drawer -->
+        <div id="mobileMenu" class="hidden md:hidden px-4 pt-2 pb-6 bg-white/95 dark:bg-navy-900/95 border-b border-slate-200 dark:border-slate-800 space-y-3 backdrop-blur-lg">
+            <a href="#about" class="mobile-link block px-3 py-2 text-base font-medium rounded-md hover:bg-slate-100 dark:hover:bg-slate-800 text-slate-700 dark:text-slate-200">About</a>
+            <a href="#leadership" class="mobile-link block px-3 py-2 text-base font-medium rounded-md hover:bg-slate-100 dark:hover:bg-slate-800 text-slate-700 dark:text-slate-200">Leadership</a>
+            <a href="#skills" class="mobile-link block px-3 py-2 text-base font-medium rounded-md hover:bg-slate-100 dark:hover:bg-slate-800 text-slate-700 dark:text-slate-200">Skills</a>
+            <a href="#projects" class="mobile-link block px-3 py-2 text-base font-medium rounded-md hover:bg-slate-100 dark:hover:bg-slate-800 text-slate-700 dark:text-slate-200">Projects</a>
+            <a href="#education" class="mobile-link block px-3 py-2 text-base font-medium rounded-md hover:bg-slate-100 dark:hover:bg-slate-800 text-slate-700 dark:text-slate-200">Education</a>
+            <a href="#contact" class="mobile-link block px-3 py-2 text-base font-medium rounded-md hover:bg-slate-100 dark:hover:bg-slate-800 text-slate-700 dark:text-slate-200">Contact</a>
+            <div class="pt-2">
+                <a href="#contact" class="w-full text-center block px-4 py-2.5 rounded-lg font-semibold bg-amber-500 text-slate-950">Get In Touch</a>
+            </div>
+        </div>
+    </header>
+
+    <main class="relative z-10 pt-24 space-y-28 sm:space-y-36">
+
+        <!-- 01. HERO SECTION -->
+        <section id="hero" class="pt-12 sm:pt-20 pb-8 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-8 items-center">
+                
+                <!-- Left Column: Content -->
+                <div class="lg:col-span-7 space-y-6 sm:space-y-8">
+                    <!-- Status Badge -->
+                    <div class="inline-flex items-center gap-2.5 px-3.5 py-1.5 rounded-full text-xs font-semibold bg-amber-50 border border-amber-200/60 text-amber-900 dark:bg-amber-950/40 dark:border-amber-800/40 dark:text-amber-300">
+                        <span class="w-2 h-2 rounded-full bg-emerald-500 animate-pulse"></span>
+                        <span>Foreign Trade University (FTU) • President @ Future Bankers Network</span>
+                    </div>
+
+                    <!-- Main Headline -->
+                    <div class="space-y-3">
+                        <h1 class="text-4xl sm:text-6xl font-extrabold tracking-tight text-slate-900 dark:text-white leading-[1.15]">
+                            PHAM MAI LINH
+                        </h1>
+                        <p class="text-2xl sm:text-3xl font-serif italic text-amber-600 dark:text-gold-400 font-medium">
+                            Finance. Analytics. Leadership.
+                        </p>
+                    </div>
+
+                    <!-- Intro Bio -->
+                    <p class="text-base sm:text-lg text-slate-600 dark:text-slate-300 leading-relaxed max-w-2xl">
+                        I am a <strong class="text-slate-900 dark:text-white font-semibold">Banking and International Finance</strong> student at Foreign Trade University, passionate about financial analysis, banking operations, and data-driven decision-making.
+                    </p>
+
+                    <p class="text-sm sm:text-base text-slate-600 dark:text-slate-400 leading-relaxed max-w-2xl">
+                        By combining financial knowledge, quantitative thinking, and data analytics, I aim to understand business performance, evaluate financial risks, and translate complex information into actionable insights.
+                    </p>
+
+                    <div class="p-4 rounded-xl bg-white dark:bg-navy-900/90 border border-slate-200/80 dark:border-slate-800 shadow-sm max-w-2xl flex items-start gap-3">
+                        <div class="p-2 rounded-lg bg-amber-100 dark:bg-amber-950/60 text-amber-700 dark:text-amber-300 shrink-0">
+                            <i data-lucide="award" class="w-5 h-5"></i>
+                        </div>
+                        <p class="text-xs sm:text-sm text-slate-600 dark:text-slate-300 leading-normal">
+                            Beyond the classroom, I have developed my leadership and execution capabilities through professional activities in the <strong class="text-slate-900 dark:text-white">Future Bankers Network at FTU</strong>, where I currently serve as <span class="text-amber-600 dark:text-gold-400 font-semibold">President</span>.
+                        </p>
+                    </div>
+
+                    <!-- Action CTAs -->
+                    <div class="flex flex-wrap items-center gap-4 pt-2">
+                        <a href="#projects" class="inline-flex items-center gap-2 px-6 py-3.5 rounded-xl font-semibold bg-slate-900 text-white hover:bg-slate-800 dark:bg-amber-500 dark:text-slate-950 dark:hover:bg-amber-400 shadow-md shadow-slate-900/10 dark:shadow-amber-500/20 transition-all hover:scale-[1.02]">
+                            <i data-lucide="folder-kanban" class="w-4 h-4"></i>
+                            <span>Explore My Work</span>
+                        </a>
+
+                        <button onclick="openCvModal()" class="inline-flex items-center gap-2 px-6 py-3.5 rounded-xl font-semibold bg-white dark:bg-navy-900 text-slate-800 dark:text-slate-200 border border-slate-200 dark:border-slate-800 hover:bg-slate-50 dark:hover:bg-slate-800/80 shadow-sm transition-all hover:scale-[1.02]">
+                            <i data-lucide="file-text" class="w-4 h-4 text-amber-500"></i>
+                            <span>Download CV</span>
+                        </button>
+
+                        <a href="https://www.linkedin.com/in/mai-linh-ph%E1%BA%A1m-15ab65359/" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-2 px-6 py-3.5 rounded-xl font-semibold text-slate-600 dark:text-slate-300 hover:text-slate-900 dark:hover:text-white transition-colors">
+                            <i data-lucide="linkedin" class="w-4 h-4 text-blue-600"></i>
+                            <span>Connect on LinkedIn</span>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Right Column: Visual Profile & Key Metric Cards -->
+                <div class="lg:col-span-5 relative">
+                    <!-- Glassmorphism Card Frame -->
+                    <div class="relative rounded-3xl p-6 sm:p-8 bg-gradient-to-b from-white/90 to-slate-50/90 dark:from-navy-900/90 dark:to-navy-950/90 border border-slate-200 dark:border-slate-800 shadow-xl backdrop-blur-xl space-y-6">
+                        
+                        <!-- Top Header inside Card -->
+                        <div class="flex items-center justify-between pb-4 border-b border-slate-200/60 dark:border-slate-800/60">
+                            <div class="flex items-center gap-3">
+                                <div class="w-12 h-12 rounded-2xl bg-slate-900 dark:bg-navy-800 text-amber-400 flex items-center justify-center font-bold text-lg border border-amber-500/20">
+                                    <i data-lucide="line-chart" class="w-6 h-6"></i>
+                                </div>
+                                <div>
+                                    <h3 class="font-bold text-slate-900 dark:text-white text-base">Executive Profile</h3>
+                                    <p class="text-xs text-slate-500 dark:text-slate-400">Quantitative & Strategic Focus</p>
+                                </div>
+                            </div>
+                            <span class="px-2.5 py-1 text-xs rounded-full bg-emerald-100 text-emerald-800 dark:bg-emerald-950/60 dark:text-emerald-300 font-semibold flex items-center gap-1">
+                                <span class="w-1.5 h-1.5 rounded-full bg-emerald-500"></span> Active
+                            </span>
+                        </div>
+
+                        <!-- Core Capabilities Metrics -->
+                        <div class="space-y-4">
+                            <div class="p-3.5 rounded-xl bg-slate-100/70 dark:bg-navy-800/50 border border-slate-200/50 dark:border-slate-700/50">
+                                <div class="flex justify-between items-center mb-1">
+                                    <span class="text-xs font-semibold text-slate-700 dark:text-slate-300 uppercase tracking-wider">Academic Foundation</span>
+                                    <span class="text-xs font-bold text-amber-600 dark:text-gold-400">FTU Banking & Finance</span>
+                                </div>
+                                <p class="text-xs text-slate-500 dark:text-slate-400">Foreign Trade University, Vietnam</p>
+                            </div>
+
+                            <div class="p-3.5 rounded-xl bg-slate-100/70 dark:bg-navy-800/50 border border-slate-200/50 dark:border-slate-700/50">
+                                <div class="flex justify-between items-center mb-1">
+                                    <span class="text-xs font-semibold text-slate-700 dark:text-slate-300 uppercase tracking-wider">Leadership Scope</span>
+                                    <span class="text-xs font-bold text-amber-600 dark:text-gold-400">President, FBN–FTU</span>
+                                </div>
+                                <p class="text-xs text-slate-500 dark:text-slate-400">Leading initiatives & competition execution</p>
+                            </div>
+
+                            <div class="p-3.5 rounded-xl bg-slate-100/70 dark:bg-navy-800/50 border border-slate-200/50 dark:border-slate-700/50">
+                                <div class="flex justify-between items-center mb-1">
+                                    <span class="text-xs font-semibold text-slate-700 dark:text-slate-300 uppercase tracking-wider">Analytical Toolkit</span>
+                                    <span class="text-xs font-bold text-amber-600 dark:text-gold-400">Python • Power BI • Excel</span>
+                                </div>
+                                <p class="text-xs text-slate-500 dark:text-slate-400">Data science for economic & financial modeling</p>
+                            </div>
+                        </div>
+
+                        <!-- Focus Domains Pills -->
+                        <div class="pt-2">
+                            <div class="text-xs font-semibold uppercase tracking-wider text-slate-400 mb-2">Target Domains</div>
+                            <div class="flex flex-wrap gap-1.5">
+                                <span class="px-2.5 py-1 text-xs rounded-lg bg-blue-50 dark:bg-blue-950/40 text-blue-700 dark:text-blue-300 border border-blue-200/40 dark:border-blue-900/40">Financial Analysis</span>
+                                <span class="px-2.5 py-1 text-xs rounded-lg bg-emerald-50 dark:bg-emerald-950/40 text-emerald-700 dark:text-emerald-300 border border-emerald-200/40 dark:border-emerald-900/40">Credit & Risk</span>
+                                <span class="px-2.5 py-1 text-xs rounded-lg bg-amber-50 dark:bg-amber-950/40 text-amber-700 dark:text-amber-300 border border-amber-200/40 dark:border-amber-900/40">Corporate Finance & FP&A</span>
+                                <span class="px-2.5 py-1 text-xs rounded-lg bg-purple-50 dark:bg-purple-950/40 text-purple-700 dark:text-purple-300 border border-purple-200/40 dark:border-purple-900/40">Banking Operations</span>
+                            </div>
+                        </div>
+
+                        <!-- Card Footer Quote -->
+                        <div class="pt-4 border-t border-slate-200/60 dark:border-slate-800/60 text-center">
+                            <span class="text-xs italic text-slate-500 dark:text-slate-400">
+                                "Asking the right questions, understanding the evidence, and driving actionable insights."
+                            </span>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- 02. ABOUT ME SECTION -->
+        <section id="about" class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="border-t border-slate-200 dark:border-slate-800 pt-16 sm:pt-20">
+                <div class="flex items-center gap-3 text-xs font-bold uppercase tracking-widest text-amber-600 dark:text-gold-400 mb-3">
+                    <span>02</span>
+                    <span class="w-8 h-px bg-amber-500"></span>
+                    <span>Philosophy & Background</span>
+                </div>
+                
+                <h2 class="text-3xl sm:text-5xl font-extrabold text-slate-900 dark:text-white tracking-tight mb-8">
+                    Understanding Finance Beyond the Numbers
+                </h2>
+
+                <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-start">
+                    
+                    <!-- Narrative Description -->
+                    <div class="lg:col-span-7 space-y-6 text-slate-600 dark:text-slate-300 text-base sm:text-lg leading-relaxed">
+                        <p>
+                            My interest in finance lies in understanding not only how financial results are generated, but also the business decisions, market conditions, and risks behind them.
+                        </p>
+                        <p>
+                            As a Banking and International Finance student at Foreign Trade University, I have been building a foundation in financial analysis, economics, quantitative methods, and data analytics. I am particularly interested in applying analytical tools to real-world financial and business problems, from evaluating corporate performance to understanding credit risk and banking activities.
+                        </p>
+                        <p>
+                            My learning journey extends beyond technical skills. Through leadership roles at the <strong class="text-slate-900 dark:text-white">Future Bankers Network</strong>, I have gained experience in organizing professional initiatives, leading teams, and translating ideas into tangible outcomes.
+                        </p>
+                        <p>
+                            I am open to opportunities across <strong class="text-slate-900 dark:text-white font-semibold">financial analysis, banking analysis, credit and risk analysis, corporate finance, and FP&A</strong>, where structured thinking, analytical rigor, and a strong understanding of business context are essential.
+                        </p>
+                    </div>
+
+                    <!-- Highlight Quote & Core Value Card -->
+                    <div class="lg:col-span-5 space-y-6">
+                        <!-- Key Creed Card -->
+                        <div class="relative rounded-2xl p-6 sm:p-8 bg-gradient-to-br from-amber-500/10 via-slate-100 to-white dark:from-navy-900 dark:via-navy-900 dark:to-navy-800 border-l-4 border-amber-500 shadow-sm">
+                            <i data-lucide="quote" class="w-10 h-10 text-amber-500/30 mb-4"></i>
+                            <blockquote class="font-serif italic text-lg sm:text-xl text-slate-900 dark:text-white leading-relaxed mb-4">
+                                "I believe effective analysis goes beyond producing numbers. It means asking the right questions, understanding the limitations of the evidence, and providing insights that support better decisions."
+                            </blockquote>
+                            <div class="text-sm font-semibold text-slate-900 dark:text-white">— Pham Mai Linh</div>
+                            <div class="text-xs text-slate-500 dark:text-slate-400">President, Future Bankers Network (FTU)</div>
+                        </div>
+
+                        <!-- 3 Core Tenets -->
+                        <div class="grid grid-cols-1 gap-3">
+                            <div class="p-4 rounded-xl bg-white dark:bg-navy-900 border border-slate-200 dark:border-slate-800 flex items-center gap-4">
+                                <div class="w-10 h-10 rounded-lg bg-blue-100 dark:bg-blue-950/60 text-blue-600 dark:text-blue-400 flex items-center justify-center shrink-0">
+                                    <i data-lucide="search" class="w-5 h-5"></i>
+                                </div>
+                                <div>
+                                    <h4 class="font-bold text-slate-900 dark:text-white text-sm">Critical Inquiry</h4>
+                                    <p class="text-xs text-slate-500 dark:text-slate-400">Looking behind financial statements to uncover operational drivers.</p>
+                                </div>
+                            </div>
+
+                            <div class="p-4 rounded-xl bg-white dark:bg-navy-900 border border-slate-200 dark:border-slate-800 flex items-center gap-4">
+                                <div class="w-10 h-10 rounded-lg bg-emerald-100 dark:bg-emerald-950/60 text-emerald-600 dark:text-emerald-400 flex items-center justify-center shrink-0">
+                                    <i data-lucide="bar-chart-3" class="w-5 h-5"></i>
+                                </div>
+                                <div>
+                                    <h4 class="font-bold text-slate-900 dark:text-white text-sm">Quantitative Precision</h4>
+                                    <p class="text-xs text-slate-500 dark:text-slate-400">Utilizing statistical methods, Python & Power BI for data verification.</p>
+                                </div>
+                            </div>
+
+                            <div class="p-4 rounded-xl bg-white dark:bg-navy-900 border border-slate-200 dark:border-slate-800 flex items-center gap-4">
+                                <div class="w-10 h-10 rounded-lg bg-amber-100 dark:bg-amber-950/60 text-amber-600 dark:text-amber-400 flex items-center justify-center shrink-0">
+                                    <i data-lucide="users" class="w-5 h-5"></i>
+                                </div>
+                                <div>
+                                    <h4 class="font-bold text-slate-900 dark:text-white text-sm">Execution Leadership</h4>
+                                    <p class="text-xs text-slate-500 dark:text-slate-400">Mobilizing teams to deliver complex professional programs.</p>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 04. LEADERSHIP & PROFESSIONAL EXPERIENCE -->
+        <section id="leadership" class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="border-t border-slate-200 dark:border-slate-800 pt-16 sm:pt-20">
+                <div class="flex items-center gap-3 text-xs font-bold uppercase tracking-widest text-amber-600 dark:text-gold-400 mb-3">
+                    <span>03</span>
+                    <span class="w-8 h-px bg-amber-500"></span>
+                    <span>Organizational Impact</span>
+                </div>
+
+                <div class="flex flex-col md:flex-row md:items-end justify-between gap-4 mb-12">
+                    <div>
+                        <h2 class="text-3xl sm:text-5xl font-extrabold text-slate-900 dark:text-white tracking-tight">
+                            Leadership & Experience
+                        </h2>
+                        <p class="text-slate-500 dark:text-slate-400 mt-2 text-base sm:text-lg">
+                            Building student initiatives, connecting academics with industry realities.
+                        </p>
+                    </div>
+                    <div class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-lg bg-slate-100 dark:bg-navy-800 text-xs font-semibold text-slate-700 dark:text-slate-300">
+                        <i data-lucide="shield-check" class="w-4 h-4 text-emerald-500"></i>
+                        <span>Future Bankers Network — FTU (FBN–FTU)</span>
+                    </div>
+                </div>
+
+                <!-- Timeline / Experience Stack -->
+                <div class="space-y-8">
+
+                    <!-- Role 1: President -->
+                    <div class="relative rounded-3xl p-6 sm:p-10 bg-white dark:bg-navy-900 border border-slate-200 dark:border-slate-800 shadow-sm hover:shadow-md transition-shadow">
+                        <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-4 pb-6 border-b border-slate-100 dark:border-slate-800/80">
+                            <div>
+                                <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full text-xs font-semibold bg-amber-100 dark:bg-amber-950/60 text-amber-800 dark:text-gold-400 mb-2">
+                                    <span class="w-2 h-2 rounded-full bg-amber-500"></span> Current Executive Role
+                                </div>
+                                <h3 class="text-2xl sm:text-3xl font-bold text-slate-900 dark:text-white">President</h3>
+                                <p class="text-base text-amber-600 dark:text-gold-400 font-semibold mt-0.5">Future Bankers Network — Foreign Trade University (FBN–FTU)</p>
+                            </div>
+                            <div class="text-sm font-semibold text-slate-500 dark:text-slate-400 bg-slate-100 dark:bg-navy-800 px-4 py-2 rounded-xl self-start sm:self-auto">
+                                Sep 2026 – Present
+                            </div>
+                        </div>
+
+                        <div class="pt-6 space-y-6">
+                            <p class="text-slate-600 dark:text-slate-300 leading-relaxed text-base sm:text-lg">
+                                Leading the student organization with a focus on strengthening its professional activities, developing members, and creating meaningful learning opportunities for students interested in banking and finance.
+                            </p>
+                            <p class="text-slate-600 dark:text-slate-400 text-sm sm:text-base leading-relaxed">
+                                My role involves contributing to the Network's strategic direction, coordinating across teams, and supporting the execution of initiatives that connect financial knowledge with practical industry exposure.
+                            </p>
+
+                            <!-- Key Responsibilities Grid -->
+                            <div>
+                                <h4 class="text-xs font-bold uppercase tracking-wider text-slate-400 dark:text-slate-500 mb-3">Key Areas of Responsibility</h4>
+                                <div class="grid grid-cols-1 md:grid-cols-2 gap-3.5">
+                                    <div class="flex items-start gap-3 p-3.5 rounded-xl bg-slate-50 dark:bg-navy-950/50 border border-slate-100 dark:border-slate-800">
+                                        <i data-lucide="compass" class="w-5 h-5 text-amber-500 shrink-0 mt-0.5"></i>
+                                        <span class="text-sm text-slate-700 dark:text-slate-300 font-medium">Organizational direction and strategic planning.</span>
+                                    </div>
+                                    <div class="flex items-start gap-3 p-3.5 rounded-xl bg-slate-50 dark:bg-navy-950/50 border border-slate-100 dark:border-slate-800">
+                                        <i data-lucide="users-round" class="w-5 h-5 text-amber-500 shrink-0 mt-0.5"></i>
+                                        <span class="text-sm text-slate-700 dark:text-slate-300 font-medium">Team coordination and leadership development.</span>
+                                    </div>
+                                    <div class="flex items-start gap-3 p-3.5 rounded-xl bg-slate-50 dark:bg-navy-950/50 border border-slate-100 dark:border-slate-800">
+                                        <i data-lucide="sparkles" class="w-5 h-5 text-amber-500 shrink-0 mt-0.5"></i>
+                                        <span class="text-sm text-slate-700 dark:text-slate-300 font-medium">Professional programming and student engagement.</span>
+                                    </div>
+                                    <div class="flex items-start gap-3 p-3.5 rounded-xl bg-slate-50 dark:bg-navy-950/50 border border-slate-100 dark:border-slate-800">
+                                        <i data-lucide="trending-up" class="w-5 h-5 text-amber-500 shrink-0 mt-0.5"></i>
+                                        <span class="text-sm text-slate-700 dark:text-slate-300 font-medium">Long-term development of the Network's activities and initiatives.</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Role 2: Head of Specialization Department -->
+                    <div class="relative rounded-3xl p-6 sm:p-10 bg-white dark:bg-navy-900 border border-slate-200 dark:border-slate-800 shadow-sm hover:shadow-md transition-shadow">
+                        <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-4 pb-6 border-b border-slate-100 dark:border-slate-800/80">
+                            <div>
+                                <h3 class="text-2xl sm:text-3xl font-bold text-slate-900 dark:text-white">Head of the Specialization Department (BCM)</h3>
+                                <p class="text-base text-slate-500 dark:text-slate-400 font-medium mt-0.5">Future Bankers Network — Foreign Trade University</p>
+                            </div>
+                            <div class="text-sm font-semibold text-slate-500 dark:text-slate-400 bg-slate-100 dark:bg-navy-800 px-4 py-2 rounded-xl self-start sm:self-auto">
+                                Sep 2025 – Sep 2026
+                            </div>
+                        </div>
+
+                        <div class="pt-6 space-y-6">
+                            <p class="text-slate-600 dark:text-slate-300 leading-relaxed text-base">
+                                Led the department responsible for developing professional content and finance-related activities, translating technical knowledge into educational initiatives and student-facing programs.
+                            </p>
+
+                            <!-- Selected Achievements Cards -->
+                            <div>
+                                <h4 class="text-xs font-bold uppercase tracking-wider text-slate-400 dark:text-slate-500 mb-4">Selected Achievements & Initiatives</h4>
+                                
+                                <div class="grid grid-cols-1 md:grid-cols-3 gap-4">
+                                    <!-- Achievement 1 -->
+                                    <div class="p-5 rounded-2xl bg-gradient-to-br from-slate-50 to-white dark:from-navy-950/70 dark:to-navy-900 border border-slate-200/80 dark:border-slate-800 space-y-3">
+                                        <div class="w-9 h-9 rounded-xl bg-amber-500/10 text-amber-600 dark:text-gold-400 flex items-center justify-center font-bold">
+                                            <i data-lucide="trophy" class="w-5 h-5"></i>
+                                        </div>
+                                        <h5 class="font-bold text-slate-900 dark:text-white text-base">The Banker 2026</h5>
+                                        <p class="text-xs font-medium text-amber-600 dark:text-gold-400">Competition Leadership</p>
+                                        <p class="text-xs text-slate-500 dark:text-slate-400 leading-relaxed">
+                                            Led the successful execution of The Banker 2026, contributing to planning, coordination, and delivery of a premier finance- and banking-focused competition.
+                                        </p>
+                                    </div>
+
+                                    <!-- Achievement 2 -->
+                                    <div class="p-5 rounded-2xl bg-gradient-to-br from-slate-50 to-white dark:from-navy-950/70 dark:to-navy-900 border border-slate-200/80 dark:border-slate-800 space-y-3">
+                                        <div class="w-9 h-9 rounded-xl bg-blue-500/10 text-blue-600 dark:text-blue-400 flex items-center justify-center font-bold">
+                                            <i data-lucide="mic" class="w-5 h-5"></i>
+                                        </div>
+                                        <h5 class="font-bold text-slate-900 dark:text-white text-base">Investment Banking Talkshow</h5>
+                                        <p class="text-xs font-medium text-blue-600 dark:text-blue-400">Event Organization</p>
+                                        <p class="text-xs text-slate-500 dark:text-slate-400 leading-relaxed">
+                                            Organized an Investment Banking talkshow bridging academic coursework with practical perspectives from industry practitioners.
+                                        </p>
+                                    </div>
+
+                                    <!-- Achievement 3 -->
+                                    <div class="p-5 rounded-2xl bg-gradient-to-br from-slate-50 to-white dark:from-navy-950/70 dark:to-navy-900 border border-slate-200/80 dark:border-slate-800 space-y-3">
+                                        <div class="w-9 h-9 rounded-xl bg-emerald-500/10 text-emerald-600 dark:text-emerald-400 flex items-center justify-center font-bold">
+                                            <i data-lucide="book-open" class="w-5 h-5"></i>
+                                        </div>
+                                        <h5 class="font-bold text-slate-900 dark:text-white text-base">Professional Content Dev</h5>
+                                        <p class="text-xs font-medium text-emerald-600 dark:text-emerald-400">Academic & Technical Curriculum</p>
+                                        <p class="text-xs text-slate-500 dark:text-slate-400 leading-relaxed">
+                                            Contributed to the development of finance- and banking-related content, supporting members in building technical knowledge and analytical thinking.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- 05. SKILLS & TOOLKIT SECTION -->
+        <section id="skills" class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="border-t border-slate-200 dark:border-slate-800 pt-16 sm:pt-20">
+                <div class="flex items-center gap-3 text-xs font-bold uppercase tracking-widest text-amber-600 dark:text-gold-400 mb-3">
+                    <span>04</span>
+                    <span class="w-8 h-px bg-amber-500"></span>
+                    <span>Capabilities</span>
+                </div>
+
+                <div class="flex flex-col md:flex-row md:items-end justify-between gap-4 mb-8">
+                    <div>
+                        <h2 class="text-3xl sm:text-5xl font-extrabold text-slate-900 dark:text-white tracking-tight">
+                            Skills & Toolkit
+                        </h2>
+                        <p class="text-slate-500 dark:text-slate-400 mt-2 text-base">
+                            Reflecting practical application, analytical rigor, and project experience.
+                        </p>
+                    </div>
+                    
+                    <!-- Filter Tabs -->
+                    <div class="flex items-center gap-1.5 p-1 rounded-xl bg-slate-200/70 dark:bg-navy-900 border border-slate-300/60 dark:border-slate-800 self-start md:self-auto text-xs font-semibold">
+                        <button onclick="filterSkills('all')" class="skill-tab-btn px-3 py-1.5 rounded-lg active-tab bg-white dark:bg-navy-800 text-slate-900 dark:text-white shadow-sm" data-tab="all">All</button>
+                        <button onclick="filterSkills('finance')" class="skill-tab-btn px-3 py-1.5 rounded-lg text-slate-600 dark:text-slate-400 hover:text-slate-900 dark:hover:text-white" data-tab="finance">Financial</button>
+                        <button onclick="filterSkills('data')" class="skill-tab-btn px-3 py-1.5 rounded-lg text-slate-600 dark:text-slate-400 hover:text-slate-900 dark:hover:text-white" data-tab="data">Data & Quant</button>
+                        <button onclick="filterSkills('leadership')" class="skill-tab-btn px-3 py-1.5 rounded-lg text-slate-600 dark:text-slate-400 hover:text-slate-900 dark:hover:text-white" data-tab="leadership">Leadership</button>
+                    </div>
+                </div>
+
+                <!-- 3 Pillars Grid -->
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-6" id="skillsContainer">
+                    
+                    <!-- Group 1: Financial Analysis -->
+                    <div class="skill-card finance-group rounded-3xl p-6 sm:p-8 bg-white dark:bg-navy-900 border border-slate-200 dark:border-slate-800 space-y-6 shadow-sm hover:border-amber-500/50 transition-colors">
+                        <div class="flex items-center gap-3">
+                            <div class="w-10 h-10 rounded-xl bg-amber-500/10 text-amber-600 dark:text-gold-400 flex items-center justify-center font-bold">
+                                <i data-lucide="pie-chart" class="w-5 h-5"></i>
+                            </div>
+                            <div>
+                                <h3 class="font-bold text-slate-900 dark:text-white text-lg">Financial Analysis</h3>
+                                <p class="text-xs text-slate-500 dark:text-slate-400">Core Domain Competency</p>
+                            </div>
+                        </div>
+
+                        <ul class="space-y-3 text-sm text-slate-600 dark:text-slate-300">
+                            <li class="flex items-start gap-2.5">
+                                <i data-lucide="check-circle-2" class="w-4 h-4 text-emerald-500 shrink-0 mt-0.5"></i>
+                                <span>Financial statement analysis</span>
+                            </li>
+                            <li class="flex items-start gap-2.5">
+                                <i data-lucide="check-circle-2" class="w-4 h-4 text-emerald-500 shrink-0 mt-0.5"></i>
+                                <span>Financial ratio analysis</span>
+                            </li>
+                            <li class="flex items-start gap-2.5">
+                                <i data-lucide="check-circle-2" class="w-4 h-4 text-emerald-500 shrink-0 mt-0.5"></i>
+                                <span>Corporate finance fundamentals</span>
+                            </li>
+                            <li class="flex items-start gap-2.5">
+                                <i data-lucide="check-circle-2" class="w-4 h-4 text-emerald-500 shrink-0 mt-0.5"></i>
+                                <span>Equity analysis & valuation fundamentals</span>
+                            </li>
+                            <li class="flex items-start gap-2.5">
+                                <i data-lucide="check-circle-2" class="w-4 h-4 text-emerald-500 shrink-0 mt-0.5"></i>
+                                <span>Banking and lending regulation</span>
+                            </li>
+                            <li class="flex items-start gap-2.5">
+                                <i data-lucide="check-circle-2" class="w-4 h-4 text-emerald-500 shrink-0 mt-0.5"></i>
+                                <span>Credit and risk analysis fundamentals</span>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <!-- Group 2: Data & Quantitative Analysis -->
+                    <div class="skill-card data-group rounded-3xl p-6 sm:p-8 bg-white dark:bg-navy-900 border border-slate-200 dark:border-slate-800 space-y-6 shadow-sm hover:border-blue-500/50 transition-colors">
+                        <div class="flex items-center gap-3">
+                            <div class="w-10 h-10 rounded-xl bg-blue-500/10 text-blue-600 dark:text-blue-400 flex items-center justify-center font-bold">
+                                <i data-lucide="database" class="w-5 h-5"></i>
+                            </div>
+                            <div>
+                                <h3 class="font-bold text-slate-900 dark:text-white text-lg">Data & Quantitative</h3>
+                                <p class="text-xs text-slate-500 dark:text-slate-400">Technical Analytics Stack</p>
+                            </div>
+                        </div>
+
+                        <ul class="space-y-3 text-sm text-slate-600 dark:text-slate-300">
+                            <li class="flex items-start gap-2.5">
+                                <i data-lucide="check-circle-2" class="w-4 h-4 text-blue-500 shrink-0 mt-0.5"></i>
+                                <span>Microsoft Excel (Financial modeling)</span>
+                            </li>
+                            <li class="flex items-start gap-2.5">
+                                <i data-lucide="check-circle-2" class="w-4 h-4 text-blue-500 shrink-0 mt-0.5"></i>
+                                <span>Power BI & Data Visualization</span>
+                            </li>
+                            <li class="flex items-start gap-2.5">
+                                <i data-lucide="check-circle-2" class="w-4 h-4 text-blue-500 shrink-0 mt-0.5"></i>
+                                <span>Python for Data Analysis (Pandas, NumPy)</span>
+                            </li>
+                            <li class="flex items-start gap-2.5">
+                                <i data-lucide="check-circle-2" class="w-4 h-4 text-blue-500 shrink-0 mt-0.5"></i>
+                                <span>SQL fundamentals</span>
+                            </li>
+                            <li class="flex items-start gap-2.5">
+                                <i data-lucide="check-circle-2" class="w-4 h-4 text-blue-500 shrink-0 mt-0.5"></i>
+                                <span>Statistics & Quantitative reasoning</span>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <!-- Group 3: Business & Leadership -->
+                    <div class="skill-card leadership-group rounded-3xl p-6 sm:p-8 bg-white dark:bg-navy-900 border border-slate-200 dark:border-slate-800 space-y-6 shadow-sm hover:border-emerald-500/50 transition-colors">
+                        <div class="flex items-center gap-3">
+                            <div class="w-10 h-10 rounded-xl bg-emerald-500/10 text-emerald-600 dark:text-emerald-400 flex items-center justify-center font-bold">
+                                <i data-lucide="briefcase" class="w-5 h-5"></i>
+                            </div>
+                            <div>
+                                <h3 class="font-bold text-slate-900 dark:text-white text-lg">Business & Leadership</h3>
+                                <p class="text-xs text-slate-500 dark:text-slate-400">Execution & Strategy</p>
+                            </div>
+                        </div>
+
+                        <ul class="space-y-3 text-sm text-slate-600 dark:text-slate-300">
+                            <li class="flex items-start gap-2.5">
+                                <i data-lucide="check-circle-2" class="w-4 h-4 text-amber-500 shrink-0 mt-0.5"></i>
+                                <span>Structured problem-solving</span>
+                            </li>
+                            <li class="flex items-start gap-2.5">
+                                <i data-lucide="check-circle-2" class="w-4 h-4 text-amber-500 shrink-0 mt-0.5"></i>
+                                <span>Business and strategic analysis</span>
+                            </li>
+                            <li class="flex items-start gap-2.5">
+                                <i data-lucide="check-circle-2" class="w-4 h-4 text-amber-500 shrink-0 mt-0.5"></i>
+                                <span>Project planning and execution</span>
+                            </li>
+                            <li class="flex items-start gap-2.5">
+                                <i data-lucide="check-circle-2" class="w-4 h-4 text-amber-500 shrink-0 mt-0.5"></i>
+                                <span>Team leadership and coordination</span>
+                            </li>
+                            <li class="flex items-start gap-2.5">
+                                <i data-lucide="check-circle-2" class="w-4 h-4 text-amber-500 shrink-0 mt-0.5"></i>
+                                <span>Professional communication & presentation</span>
+                            </li>
+                        </ul>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- 03. SELECTED PROJECTS SECTION -->
+        <section id="projects" class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="border-t border-slate-200 dark:border-slate-800 pt-16 sm:pt-20">
+                <div class="flex items-center gap-3 text-xs font-bold uppercase tracking-widest text-amber-600 dark:text-gold-400 mb-3">
+                    <span>05</span>
+                    <span class="w-8 h-px bg-amber-500"></span>
+                    <span>Portfolio Showcase</span>
+                </div>
+
+                <div class="flex flex-col md:flex-row md:items-end justify-between gap-4 mb-10">
+                    <div>
+                        <h2 class="text-3xl sm:text-5xl font-extrabold text-slate-900 dark:text-white tracking-tight">
+                            Selected Projects
+                        </h2>
+                        <p class="text-slate-500 dark:text-slate-400 mt-2 text-base">
+                            Applied financial modeling, data analytics, and industry research.
+                        </p>
+                    </div>
+                    <div class="inline-flex items-center gap-2 px-3 py-1.5 rounded-lg bg-amber-500/10 text-amber-700 dark:text-gold-400 text-xs font-semibold">
+                        <i data-lucide="clock" class="w-4 h-4"></i>
+                        <span>Ready to customize & plug in</span>
+                    </div>
+                </div>
+
+                <!-- Showcase Cards with tailored structure -->
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+
+                    <!-- Project Card 1: Banking Risk -->
+                    <div class="group rounded-3xl p-6 sm:p-7 bg-white dark:bg-navy-900 border border-slate-200 dark:border-slate-800 shadow-sm hover:shadow-xl transition-all duration-300 flex flex-col justify-between">
+                        <div class="space-y-4">
+                            <div class="flex items-center justify-between">
+                                <span class="px-2.5 py-1 rounded-md text-xs font-semibold bg-blue-100 dark:bg-blue-950/60 text-blue-700 dark:text-blue-300">
+                                    Banking & Credit
+                                </span>
+                                <span class="text-xs text-slate-400">Featured Case Study</span>
+                            </div>
+                            <h3 class="text-xl font-bold text-slate-900 dark:text-white group-hover:text-amber-600 dark:group-hover:text-gold-400 transition-colors">
+                                Commercial Bank Credit Risk & Financial Health Analysis
+                            </h3>
+                            <p class="text-sm text-slate-600 dark:text-slate-400 leading-relaxed">
+                                Evaluated loan portfolio quality, NPL ratios, capital adequacy (CAR), and liquidity ratios across leading Vietnamese commercial banks using structured financial metrics.
+                            </p>
+                            
+                            <div class="flex flex-wrap gap-1.5 pt-2">
+                                <span class="px-2 py-0.5 rounded text-xs bg-slate-100 dark:bg-navy-800 text-slate-600 dark:text-slate-300">Excel Modeling</span>
+                                <span class="px-2 py-0.5 rounded text-xs bg-slate-100 dark:bg-navy-800 text-slate-600 dark:text-slate-300">Credit Risk</span>
+                                <span class="px-2 py-0.5 rounded text-xs bg-slate-100 dark:bg-navy-800 text-slate-600 dark:text-slate-300">Ratio Analysis</span>
+                            </div>
+                        </div>
+
+                        <div class="pt-6 mt-6 border-t border-slate-100 dark:border-slate-800 flex items-center justify-between">
+                            <span class="text-xs text-slate-400 italic">Project details available on request</span>
+                            <div class="w-8 h-8 rounded-full bg-slate-100 dark:bg-navy-800 flex items-center justify-center text-slate-500 group-hover:bg-amber-500 group-hover:text-slate-950 transition-colors">
+                                <i data-lucide="arrow-up-right" class="w-4 h-4"></i>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Project Card 2: Corporate Valuation & FP&A -->
+                    <div class="group rounded-3xl p-6 sm:p-7 bg-white dark:bg-navy-900 border border-slate-200 dark:border-slate-800 shadow-sm hover:shadow-xl transition-all duration-300 flex flex-col justify-between">
+                        <div class="space-y-4">
+                            <div class="flex items-center justify-between">
+                                <span class="px-2.5 py-1 rounded-md text-xs font-semibold bg-emerald-100 dark:bg-emerald-950/60 text-emerald-700 dark:text-emerald-300">
+                                    Analytics & FP&A
+                                </span>
+                                <span class="text-xs text-slate-400">Quantitative Model</span>
+                            </div>
+                            <h3 class="text-xl font-bold text-slate-900 dark:text-white group-hover:text-amber-600 dark:group-hover:text-gold-400 transition-colors">
+                                Corporate Financial Performance & Valuation Dashboard
+                            </h3>
+                            <p class="text-sm text-slate-600 dark:text-slate-400 leading-relaxed">
+                                Interactive dashboard combining multi-year financial statements, Dupont decomposition, profitability metrics, and DCF sensitivity tables for strategic decision-making.
+                            </p>
+                            
+                            <div class="flex flex-wrap gap-1.5 pt-2">
+                                <span class="px-2 py-0.5 rounded text-xs bg-slate-100 dark:bg-navy-800 text-slate-600 dark:text-slate-300">Power BI</span>
+                                <span class="px-2 py-0.5 rounded text-xs bg-slate-100 dark:bg-navy-800 text-slate-600 dark:text-slate-300">Python</span>
+                                <span class="px-2 py-0.5 rounded text-xs bg-slate-100 dark:bg-navy-800 text-slate-600 dark:text-slate-300">Financial Modeling</span>
+                            </div>
+                        </div>
+
+                        <div class="pt-6 mt-6 border-t border-slate-100 dark:border-slate-800 flex items-center justify-between">
+                            <span class="text-xs text-slate-400 italic">Project details available on request</span>
+                            <div class="w-8 h-8 rounded-full bg-slate-100 dark:bg-navy-800 flex items-center justify-center text-slate-500 group-hover:bg-amber-500 group-hover:text-slate-950 transition-colors">
+                                <i data-lucide="arrow-up-right" class="w-4 h-4"></i>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Project Card 3: The Banker 2026 Academic Framework -->
+                    <div class="group rounded-3xl p-6 sm:p-7 bg-white dark:bg-navy-900 border border-slate-200 dark:border-slate-800 shadow-sm hover:shadow-xl transition-all duration-300 flex flex-col justify-between">
+                        <div class="space-y-4">
+                            <div class="flex items-center justify-between">
+                                <span class="px-2.5 py-1 rounded-md text-xs font-semibold bg-amber-100 dark:bg-amber-950/60 text-amber-700 dark:text-gold-400">
+                                    Research & Case Dev
+                                </span>
+                                <span class="text-xs text-slate-400">Competition Case</span>
+                            </div>
+                            <h3 class="text-xl font-bold text-slate-900 dark:text-white group-hover:text-amber-600 dark:group-hover:text-gold-400 transition-colors">
+                                The Banker 2026: Financial Case Study Architecture
+                            </h3>
+                            <p class="text-sm text-slate-600 dark:text-slate-400 leading-relaxed">
+                                Formulated real-world banking scenario cases evaluating asset-liability management, monetary policy impacts, and credit risk assessment for university contestants.
+                            </p>
+                            
+                            <div class="flex flex-wrap gap-1.5 pt-2">
+                                <span class="px-2 py-0.5 rounded text-xs bg-slate-100 dark:bg-navy-800 text-slate-600 dark:text-slate-300">Case Design</span>
+                                <span class="px-2 py-0.5 rounded text-xs bg-slate-100 dark:bg-navy-800 text-slate-600 dark:text-slate-300">Banking Research</span>
+                                <span class="px-2 py-0.5 rounded text-xs bg-slate-100 dark:bg-navy-800 text-slate-600 dark:text-slate-300">FBN–FTU</span>
+                            </div>
+                        </div>
+
+                        <div class="pt-6 mt-6 border-t border-slate-100 dark:border-slate-800 flex items-center justify-between">
+                            <span class="text-xs text-slate-400 italic">Project details available on request</span>
+                            <div class="w-8 h-8 rounded-full bg-slate-100 dark:bg-navy-800 flex items-center justify-center text-slate-500 group-hover:bg-amber-500 group-hover:text-slate-950 transition-colors">
+                                <i data-lucide="arrow-up-right" class="w-4 h-4"></i>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+                <!-- Guidance Note for user -->
+                <div class="mt-8 p-4 rounded-2xl bg-slate-100 dark:bg-navy-900/60 border border-slate-200/60 dark:border-slate-800 text-center">
+                    <p class="text-xs sm:text-sm text-slate-500 dark:text-slate-400">
+                        <i data-lucide="info" class="w-4 h-4 inline-block mr-1 text-amber-500"></i>
+                        <strong>Note:</strong> These template project cards match your analytical focus. You can replace the titles, descriptions, or add live GitHub/demo links whenever your project documents are finalized.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <!-- 06. EDUCATION & CONTINUOUS LEARNING SECTION -->
+        <section id="education" class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="border-t border-slate-200 dark:border-slate-800 pt-16 sm:pt-20">
+                <div class="flex items-center gap-3 text-xs font-bold uppercase tracking-widest text-amber-600 dark:text-gold-400 mb-3">
+                    <span>06</span>
+                    <span class="w-8 h-px bg-amber-500"></span>
+                    <span>Academic Journey</span>
+                </div>
+
+                <h2 class="text-3xl sm:text-5xl font-extrabold text-slate-900 dark:text-white tracking-tight mb-10">
+                    Education & Continuous Learning
+                </h2>
+
+                <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-start">
+                    
+                    <!-- Left: Institutions -->
+                    <div class="lg:col-span-7 space-y-6">
+                        <!-- Degree Card: FTU -->
+                        <div class="p-6 sm:p-8 rounded-3xl bg-white dark:bg-navy-900 border border-slate-200 dark:border-slate-800 space-y-4">
+                            <div class="flex items-start justify-between gap-4">
+                                <div class="flex items-center gap-3">
+                                    <div class="w-12 h-12 rounded-2xl bg-red-100 dark:bg-red-950/60 text-red-600 flex items-center justify-center font-bold">
+                                        <i data-lucide="graduation-cap" class="w-6 h-6"></i>
+                                    </div>
+                                    <div>
+                                        <h3 class="text-xl font-bold text-slate-900 dark:text-white">Foreign Trade University (FTU)</h3>
+                                        <p class="text-sm font-semibold text-amber-600 dark:text-gold-400">Banking and International Finance</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <p class="text-slate-600 dark:text-slate-300 text-sm leading-relaxed">
+                                Building a rigorous foundation in commercial banking, corporate financial analysis, macroeconomic principles, and quantitative methods, with an interest in applying analytical approaches to financial and business decisions.
+                            </p>
+                        </div>
+
+                        <!-- Certificate Card: Data Science in Economics & Business -->
+                        <div class="p-6 sm:p-8 rounded-3xl bg-white dark:bg-navy-900 border border-slate-200 dark:border-slate-800 space-y-4">
+                            <div class="flex items-start justify-between gap-4">
+                                <div class="flex items-center gap-3">
+                                    <div class="w-12 h-12 rounded-2xl bg-blue-100 dark:bg-blue-950/60 text-blue-600 flex items-center justify-center font-bold">
+                                        <i data-lucide="binary" class="w-6 h-6"></i>
+                                    </div>
+                                    <div>
+                                        <h3 class="text-xl font-bold text-slate-900 dark:text-white">Data Science in Economics and Business — K09</h3>
+                                        <p class="text-sm font-semibold text-blue-600 dark:text-blue-400">Applied Analytical Training Program</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <p class="text-slate-600 dark:text-slate-300 text-sm leading-relaxed">
+                                Completed a specialized data science training program focused on applying analytical methods and tools to economic and business problems. Strengthened end-to-end analytical workflow: defining business hypotheses, preparing and cleaning data, selecting appropriate statistical tools, and communicating findings.
+                            </p>
+                        </div>
+                    </div>
+
+                    <!-- Right: Areas of Continued Development -->
+                    <div class="lg:col-span-5 p-6 sm:p-8 rounded-3xl bg-gradient-to-br from-amber-500/10 via-slate-50 to-white dark:from-navy-900 dark:via-navy-900 dark:to-navy-950 border border-slate-200 dark:border-slate-800 space-y-6">
+                        <div class="flex items-center gap-3">
+                            <div class="w-10 h-10 rounded-xl bg-amber-500/20 text-amber-600 dark:text-gold-400 flex items-center justify-center">
+                                <i data-lucide="trending-up" class="w-5 h-5"></i>
+                            </div>
+                            <h3 class="font-bold text-slate-900 dark:text-white text-lg">Areas of Continued Development</h3>
+                        </div>
+
+                        <p class="text-xs text-slate-500 dark:text-slate-400 leading-relaxed">
+                            Actively sharpening technical mastery and financial intuition through continuous coursework, applied modeling, and research.
+                        </p>
+
+                        <div class="space-y-3">
+                            <div class="flex items-center gap-3 p-3 rounded-xl bg-white dark:bg-navy-800/80 border border-slate-200/60 dark:border-slate-700/60">
+                                <span class="w-2 h-2 rounded-full bg-amber-500"></span>
+                                <span class="text-sm font-medium text-slate-800 dark:text-slate-200">Financial modeling and corporate valuation</span>
+                            </div>
+
+                            <div class="flex items-center gap-3 p-3 rounded-xl bg-white dark:bg-navy-800/80 border border-slate-200/60 dark:border-slate-700/60">
+                                <span class="w-2 h-2 rounded-full bg-blue-500"></span>
+                                <span class="text-sm font-medium text-slate-800 dark:text-slate-200">Banking, credit, and risk analysis</span>
+                            </div>
+
+                            <div class="flex items-center gap-3 p-3 rounded-xl bg-white dark:bg-navy-800/80 border border-slate-200/60 dark:border-slate-700/60">
+                                <span class="w-2 h-2 rounded-full bg-emerald-500"></span>
+                                <span class="text-sm font-medium text-slate-800 dark:text-slate-200">Python, SQL, and Power BI workflows</span>
+                            </div>
+
+                            <div class="flex items-center gap-3 p-3 rounded-xl bg-white dark:bg-navy-800/80 border border-slate-200/60 dark:border-slate-700/60">
+                                <span class="w-2 h-2 rounded-full bg-purple-500"></span>
+                                <span class="text-sm font-medium text-slate-800 dark:text-slate-200">Quantitative methods & applied financial research</span>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- 07. CONTACT SECTION -->
+        <section id="contact" class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pb-12">
+            <div class="border-t border-slate-200 dark:border-slate-800 pt-16 sm:pt-20">
+                <div class="grid grid-cols-1 lg:grid-cols-12 gap-12">
+                    
+                    <!-- Contact Intro Column -->
+                    <div class="lg:col-span-6 space-y-6">
+                        <div class="flex items-center gap-3 text-xs font-bold uppercase tracking-widest text-amber-600 dark:text-gold-400">
+                            <span>07</span>
+                            <span class="w-8 h-px bg-amber-500"></span>
+                            <span>Get in Touch</span>
+                        </div>
+
+                        <h2 class="text-3xl sm:text-5xl font-extrabold text-slate-900 dark:text-white tracking-tight">
+                            Let's Connect.
+                        </h2>
+
+                        <p class="text-base sm:text-lg text-slate-600 dark:text-slate-300 leading-relaxed">
+                            I welcome opportunities to learn, collaborate, and contribute to projects involving finance, banking, data analytics, and business analysis.
+                        </p>
+                        
+                        <p class="text-sm sm:text-base text-slate-500 dark:text-slate-400 leading-relaxed">
+                            Whether you are looking to discuss a financial research project, exchange ideas about the banking industry, or explore potential professional opportunities, I would be glad to connect.
+                        </p>
+
+                        <!-- Contact Channels Cards -->
+                        <div class="space-y-3 pt-2">
+                            <!-- Email Copy Item -->
+                            <div class="p-4 rounded-2xl bg-white dark:bg-navy-900 border border-slate-200 dark:border-slate-800 flex items-center justify-between">
+                                <div class="flex items-center gap-3">
+                                    <div class="w-10 h-10 rounded-xl bg-amber-500/10 text-amber-600 dark:text-gold-400 flex items-center justify-center">
+                                        <i data-lucide="mail" class="w-5 h-5"></i>
+                                    </div>
+                                    <div>
+                                        <span class="text-xs text-slate-400 block font-medium">Professional Email</span>
+                                        <span id="emailText" class="text-sm font-semibold text-slate-800 dark:text-slate-100">phammailinh.finance@gmail.com</span>
+                                    </div>
+                                </div>
+                                <button onclick="copyEmail()" class="px-3 py-1.5 rounded-lg text-xs font-semibold bg-slate-100 dark:bg-navy-800 text-slate-700 dark:text-slate-300 hover:bg-amber-500 hover:text-slate-950 transition-colors flex items-center gap-1.5" title="Copy email">
+                                    <i data-lucide="copy" class="w-3.5 h-3.5"></i>
+                                    <span id="copyBtnText">Copy</span>
+                                </button>
+                            </div>
+
+                            <!-- LinkedIn Item -->
+                            <a href="https://www.linkedin.com/in/mai-linh-ph%E1%BA%A1m-15ab65359/" target="_blank" rel="noopener noreferrer" class="p-4 rounded-2xl bg-white dark:bg-navy-900 border border-slate-200 dark:border-slate-800 flex items-center justify-between hover:border-blue-500/50 transition-all group">
+                                <div class="flex items-center gap-3">
+                                    <div class="w-10 h-10 rounded-xl bg-blue-500/10 text-blue-600 flex items-center justify-center">
+                                        <i data-lucide="linkedin" class="w-5 h-5"></i>
+                                    </div>
+                                    <div>
+                                        <span class="text-xs text-slate-400 block font-medium">Professional Network</span>
+                                        <span class="text-sm font-semibold text-slate-800 dark:text-slate-100 group-hover:text-blue-500 transition-colors">Mai Linh Phạm (LinkedIn)</span>
+                                    </div>
+                                </div>
+                                <i data-lucide="arrow-up-right" class="w-4 h-4 text-slate-400 group-hover:text-blue-500 transition-colors"></i>
+                            </a>
+
+                            <!-- GitHub Item -->
+                            <a href="https://github.com" target="_blank" rel="noopener noreferrer" class="p-4 rounded-2xl bg-white dark:bg-navy-900 border border-slate-200 dark:border-slate-800 flex items-center justify-between hover:border-slate-400 transition-all group">
+                                <div class="flex items-center gap-3">
+                                    <div class="w-10 h-10 rounded-xl bg-slate-500/10 text-slate-700 dark:text-slate-300 flex items-center justify-center">
+                                        <i data-lucide="github" class="w-5 h-5"></i>
+                                    </div>
+                                    <div>
+                                        <span class="text-xs text-slate-400 block font-medium">Analytics & Code</span>
+                                        <span class="text-sm font-semibold text-slate-800 dark:text-slate-100 group-hover:text-slate-900 dark:group-hover:text-white transition-colors">GitHub Repository</span>
+                                    </div>
+                                </div>
+                                <i data-lucide="arrow-up-right" class="w-4 h-4 text-slate-400 group-hover:text-slate-900 dark:group-hover:text-white transition-colors"></i>
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- Interactive Direct Message Form -->
+                    <div class="lg:col-span-6">
+                        <div class="p-6 sm:p-8 rounded-3xl bg-white dark:bg-navy-900 border border-slate-200 dark:border-slate-800 shadow-xl space-y-6">
+                            <h3 class="text-xl font-bold text-slate-900 dark:text-white">Send a Direct Message</h3>
+                            
+                            <form id="contactForm" onsubmit="handleContactSubmit(event)" class="space-y-4">
+                                <div>
+                                    <label class="block text-xs font-semibold text-slate-600 dark:text-slate-300 uppercase tracking-wider mb-2">Your Name</label>
+                                    <input type="text" required placeholder="e.g. John Doe" class="w-full px-4 py-3 rounded-xl bg-slate-50 dark:bg-navy-950/70 border border-slate-200 dark:border-slate-800 focus:outline-none focus:ring-2 focus:ring-amber-500 text-sm text-slate-900 dark:text-white">
+                                </div>
+
+                                <div>
+                                    <label class="block text-xs font-semibold text-slate-600 dark:text-slate-300 uppercase tracking-wider mb-2">Your Email</label>
+                                    <input type="email" required placeholder="john@example.com" class="w-full px-4 py-3 rounded-xl bg-slate-50 dark:bg-navy-950/70 border border-slate-200 dark:border-slate-800 focus:outline-none focus:ring-2 focus:ring-amber-500 text-sm text-slate-900 dark:text-white">
+                                </div>
+
+                                <div>
+                                    <label class="block text-xs font-semibold text-slate-600 dark:text-slate-300 uppercase tracking-wider mb-2">Subject</label>
+                                    <select class="w-full px-4 py-3 rounded-xl bg-slate-50 dark:bg-navy-950/70 border border-slate-200 dark:border-slate-800 focus:outline-none focus:ring-2 focus:ring-amber-500 text-sm text-slate-900 dark:text-white">
+                                        <option value="career">Career & Internship Opportunity</option>
+                                        <option value="research">Financial Research Collaboration</option>
+                                        <option value="fbn">Future Bankers Network Inquiries</option>
+                                        <option value="other">General Inquiries</option>
+                                    </select>
+                                </div>
+
+                                <div>
+                                    <label class="block text-xs font-semibold text-slate-600 dark:text-slate-300 uppercase tracking-wider mb-2">Message</label>
+                                    <textarea rows="4" required placeholder="Hello Mai Linh, I would like to discuss..." class="w-full px-4 py-3 rounded-xl bg-slate-50 dark:bg-navy-950/70 border border-slate-200 dark:border-slate-800 focus:outline-none focus:ring-2 focus:ring-amber-500 text-sm text-slate-900 dark:text-white"></textarea>
+                                </div>
+
+                                <button type="submit" class="w-full py-3.5 px-6 rounded-xl font-bold bg-slate-900 text-white dark:bg-amber-500 dark:text-slate-950 dark:hover:bg-amber-400 hover:bg-slate-800 shadow-md transition-all flex items-center justify-center gap-2">
+                                    <span>Send Message</span>
+                                    <i data-lucide="send" class="w-4 h-4"></i>
+                                </button>
+                            </form>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Footer -->
+    <footer class="border-t border-slate-200 dark:border-slate-800/80 py-8 text-center text-xs text-slate-500 dark:text-slate-400">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col sm:flex-row items-center justify-between gap-4">
+            <div class="flex items-center gap-2">
+                <span class="font-bold text-slate-800 dark:text-slate-200">Pham Mai Linh</span>
+                <span>• Banking & International Finance, FTU</span>
+            </div>
+            <div>
+                &copy; <span id="currentYear"></span> Pham Mai Linh. <span class="text-amber-600 dark:text-gold-400 font-semibold">anthasialinh.id.vn</span> • All rights reserved.
+            </div>
+            <a href="#hero" class="hover:text-amber-500 transition-colors inline-flex items-center gap-1">
+                <span>Back to top</span>
+                <i data-lucide="arrow-up" class="w-3.5 h-3.5"></i>
+            </a>
+        </div>
+    </footer>
+
+    <!-- Interactive CV Modal -->
+    <div id="cvModal" class="fixed inset-0 z-50 hidden bg-slate-950/70 backdrop-blur-sm flex items-center justify-center p-4">
+        <div class="bg-white dark:bg-navy-900 rounded-3xl max-w-lg w-full p-6 sm:p-8 border border-slate-200 dark:border-slate-800 shadow-2xl relative space-y-6">
+            <button onclick="closeCvModal()" class="absolute top-6 right-6 text-slate-400 hover:text-slate-900 dark:hover:text-white">
+                <i data-lucide="x" class="w-5 h-5"></i>
+            </button>
+
+            <div class="flex items-center gap-3">
+                <div class="w-12 h-12 rounded-2xl bg-amber-500/10 text-amber-600 dark:text-gold-400 flex items-center justify-center font-bold">
+                    <i data-lucide="file-check" class="w-6 h-6"></i>
+                </div>
+                <div>
+                    <h3 class="text-xl font-bold text-slate-900 dark:text-white">Download Curriculum Vitae</h3>
+                    <p class="text-xs text-slate-500 dark:text-slate-400">Pham Mai Linh — Finance & Analytics</p>
+                </div>
+            </div>
+
+            <div class="p-4 rounded-xl bg-slate-50 dark:bg-navy-950 border border-slate-200/60 dark:border-slate-800 text-xs text-slate-600 dark:text-slate-300 space-y-2">
+                <div class="flex justify-between font-semibold">
+                    <span>Document:</span>
+                    <span class="text-slate-900 dark:text-white">CV_Pham_Mai_Linh_2026.pdf</span>
+                </div>
+                <div class="flex justify-between">
+                    <span>Focus Areas:</span>
+                    <span>Corporate Finance, Risk, Banking, FP&A</span>
+                </div>
+                <div class="flex justify-between">
+                    <span>Format:</span>
+                    <span>Executive Resume (PDF)</span>
+                </div>
+            </div>
+
+            <div class="space-y-3">
+                <a href="#contact" onclick="closeCvModal()" class="w-full py-3 px-4 rounded-xl bg-slate-900 text-white dark:bg-amber-500 dark:text-slate-950 font-bold text-center block hover:opacity-95 transition-opacity">
+                    Request Full CV via Email
+                </a>
+                <button onclick="simulateCvDownload()" class="w-full py-3 px-4 rounded-xl border border-slate-200 dark:border-slate-800 text-slate-700 dark:text-slate-300 font-semibold text-center block hover:bg-slate-50 dark:hover:bg-slate-800 transition-colors">
+                    Download Preview PDF
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Toast Notification -->
+    <div id="toastNotification" class="fixed bottom-6 right-6 z-50 hidden items-center gap-3 px-5 py-3 rounded-2xl bg-slate-900 text-white dark:bg-white dark:text-slate-950 shadow-2xl text-sm font-medium transition-all transform translate-y-2">
+        <i data-lucide="check" class="w-4 h-4 text-emerald-400"></i>
+        <span id="toastMessage">Copied to clipboard!</span>
+    </div>
+
+    <!-- Scripts -->
+    <script src="assets/js/main.js"></script>
+</body>
+</html>
