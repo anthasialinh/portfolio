@@ -1,8 +1,53 @@
-/* Custom CSS for Pham Mai Linh Portfolio */
+/* ==========================================================================
+   Pham Mai Linh — Editorial Finance & Investment Analytics Portfolio
+   Brand Identity: Fraunces (Serif) & Sora (Sans-Serif)
+   Brand Colors: #FFFFFF, #44000E, #BE185D, #880034, #F8F6F6, #E8E0E2
+   ========================================================================== */
 
-/* Custom Smooth Scrollbar */
+:root {
+    --bg-page: #FFFFFF;
+    --text-primary: #44000E;
+    --text-muted: #6B3441;
+    --accent-primary: #BE185D;
+    --accent-secondary: #880034;
+    --surface-light: #F8F6F6;
+    --surface-elevated: #FFFFFF;
+    --border-color: #E8E0E2;
+    --border-subtle: #F1ECEE;
+}
+
+.dark {
+    --bg-page: #160207;
+    --text-primary: #FDF2F4;
+    --text-muted: #D4A3AE;
+    --accent-primary: #F43F86;
+    --accent-secondary: #BE185D;
+    --surface-light: #22060D;
+    --surface-elevated: #1B0309;
+    --border-color: #4A1220;
+    --border-subtle: #330A14;
+}
+
+/* Base Editorial Typography */
+body {
+    background-color: var(--bg-page);
+    color: var(--text-primary);
+    font-family: 'Sora', sans-serif;
+    letter-spacing: -0.01em;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+/* Headings in Fraunces */
+h1, h2, h3, h4, .font-serif, .editorial-heading {
+    font-family: 'Fraunces', serif;
+    font-feature-settings: "liga", "kern";
+}
+
+/* Custom Editorial Scrollbar */
 ::-webkit-scrollbar {
-    width: 8px;
+    width: 6px;
+    height: 6px;
 }
 
 ::-webkit-scrollbar-track {
@@ -10,59 +55,115 @@
 }
 
 ::-webkit-scrollbar-thumb {
-    background-color: rgba(156, 163, 175, 0.4);
-    border-radius: 9999px;
+    background-color: #E8E0E2;
+    border-radius: 3px;
 }
 
 ::-webkit-scrollbar-thumb:hover {
-    background-color: rgba(156, 163, 175, 0.7);
+    background-color: #BE185D;
 }
 
 .dark ::-webkit-scrollbar-thumb {
-    background-color: rgba(75, 85, 99, 0.5);
+    background-color: #4A1220;
 }
 
 .dark ::-webkit-scrollbar-thumb:hover {
-    background-color: rgba(107, 114, 128, 0.8);
+    background-color: #F43F86;
 }
 
-/* Nav Link Active Indicator */
-.nav-link.active {
-    color: #d97706; /* amber-600 */
+/* Navigation Links & Indicator */
+.nav-link {
     position: relative;
+    transition: color 0.2s ease;
 }
 
-.dark .nav-link.active {
-    color: #e5c07b; /* gold-400 */
+.nav-link.active {
+    color: var(--accent-primary);
 }
 
 .nav-link.active::after {
     content: '';
     position: absolute;
-    bottom: -6px;
+    bottom: -4px;
     left: 0;
     width: 100%;
     height: 2px;
-    background: currentColor;
-    border-radius: 2px;
+    background-color: var(--accent-primary);
 }
 
-/* Subtle Glassmorphism Card Hover Effect */
-.card-hover-fx {
-    transition: transform 0.25s ease, box-shadow 0.25s ease, border-color 0.25s ease;
+/* Editorial Card & Table Hover Transitions */
+.editorial-card {
+    transition: border-color 0.25s ease, background-color 0.25s ease;
 }
 
-.card-hover-fx:hover {
-    transform: translateY(-3px);
+.editorial-card:hover {
+    border-color: var(--accent-primary);
+}
+
+/* Abstract Financial Visual Grid Lines */
+.grid-lines-pattern {
+    background-size: 32px 32px;
+    background-image: 
+        linear-gradient(to right, rgba(232, 224, 226, 0.45) 1px, transparent 1px),
+        linear-gradient(to bottom, rgba(232, 224, 226, 0.45) 1px, transparent 1px);
+}
+
+.dark .grid-lines-pattern {
+    background-image: 
+        linear-gradient(to right, rgba(74, 18, 32, 0.45) 1px, transparent 1px),
+        linear-gradient(to bottom, rgba(74, 18, 32, 0.45) 1px, transparent 1px);
+}
+
+/* Minimalist Button Micro-interactions */
+.btn-primary {
+    background-color: var(--accent-primary);
+    color: #FFFFFF;
+    transition: background-color 0.2s ease, transform 0.15s ease;
+}
+
+.btn-primary:hover {
+    background-color: var(--accent-secondary);
+}
+
+.btn-secondary {
+    background-color: transparent;
+    border: 1px solid var(--border-color);
+    color: var(--text-primary);
+    transition: all 0.2s ease;
+}
+
+.btn-secondary:hover {
+    border-color: var(--accent-primary);
+    color: var(--accent-primary);
+    background-color: var(--surface-light);
+}
+
+/* Modals */
+.modal-backdrop {
+    animation: fadeIn 0.2s ease forwards;
+}
+
+.modal-content {
+    animation: slideUp 0.25s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+@keyframes slideUp {
+    from { opacity: 0; transform: translateY(12px) scale(0.98); }
+    to { opacity: 1; transform: translateY(0) scale(1); }
 }
 
 /* Print Optimization */
 @media print {
-    #navbar, #cvModal, #toastNotification, button, footer a[href="#hero"] {
+    #navbar, #cvModal, #projectModal, #researchModal, #toastNotification, button, footer a[href="#hero"] {
         display: none !important;
     }
     body {
-        background: white !important;
-        color: black !important;
+        background: #FFFFFF !important;
+        color: #000000 !important;
     }
 }
